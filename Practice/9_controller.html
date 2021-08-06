@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myL">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../angular.min.js"></script>
+</head>
+<body  >
+<div ng-controller="languages">
+    select your Favorite: <button ng-click="php()">
+        Php
+    </button>
+    <button ng-click="js()">
+        javascript
+    </button>
+    <button ng-click="java()">
+        java
+    </button>
+
+    <p>You have selected:{{Myfav}}</p>
+</div>
+
+<script>
+    var application=angular.module('myL',[]);
+    application.controller('languages',function($scope){
+        $scope.Myfav='None';
+        $scope.php=function(){
+            $scope.Myfav='php'
+        }
+        $scope.js=function(){
+            $scope.Myfav='js'
+        }
+        $scope.java=function(){
+            $scope.Myfav='java'
+        }
+    })
+</script>
+
+</body>
+</html>

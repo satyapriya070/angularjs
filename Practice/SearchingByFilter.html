@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ht">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../angular.min.js"></script>
+    <script>
+        var mymodule=angular.module("ht",[]);
+        mymodule.controller("mycontroller",function($scope){
+     $scope.colors=['red','blue','black','green','gray'];   
+        })
+    </script>
+</head>
+<body>
+    <div ng-controller="mycontroller">
+      Search:  <input type="text" ng-model="search">
+    <hr>
+      <li ng-repeat="color in colors | filter : search">
+    {{color}}
+    </li>
+    <!-- here filter keyword work for sorching element . it will 
+    search each element what in the search variable and compare with 
+old data then it will give us output -->
+
+    </div>
+
+</body>
+</html>

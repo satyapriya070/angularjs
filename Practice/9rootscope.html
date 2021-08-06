@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ht">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../angular.min.js"></script>
+    <script src="../custom.js"></script>
+</head>
+<body>
+
+<div ng-controller="mycontroller">
+    <input type="text" ng-model="name" name="">
+    <input type="text" ng-model="city" name="">
+    <br>
+    name: {{name}}
+    <br>
+    city:{{city}}
+    <p>
+        IN controller: {{name}}
+        <br>
+        {{firstname}}
+    </p>
+</div>
+<p>
+    {{name}}
+</p>   
+<br>
+<p>
+    {{math()}}
+</p>
+
+</body>
+</html>

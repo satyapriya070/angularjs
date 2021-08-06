@@ -1,0 +1,19 @@
+ng-app: it should used in container 
+so that we can use angular to the 
+application.
+
+ng-model: is working with the input
+field.
+ng-bind: is working with the div and 
+span.
+
+
+ng-init:
+
+ng-repeat: it is used for looping the data.
+  here we are using it for
+assigning the array value.
+
+D: arraycreation.htm
+--------------------------------------------
+Mvc: Model view controller
